@@ -6,14 +6,16 @@
   'use strict'
 
   /* ── Loading screen ── */
-  window.addEventListener('load', function () {
+  function dismissLoader() {
     var screen = document.querySelector('.loading-screen')
-    if (!screen) return
-    setTimeout(function () {
-      screen.classList.add('hidden')
-      document.body.classList.remove('is-loading')
-    }, 1600)
-  })
+    if (!screen || screen.classList.contains('hidden')) return
+    screen.classList.add('hidden')
+    document.body.classList.remove('is-loading')
+  }
+  // Dismiss as soon as page loads
+  window.addEventListener('load', dismissLoader)
+  // Safety net: never block the page for more than 4s on slow mobile connections
+  setTimeout(dismissLoader, 4000)
 
   /* ── Topbar scroll tint ── */
   var topbar = document.getElementById('topbar')
