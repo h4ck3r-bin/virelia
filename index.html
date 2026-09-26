@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virelia | Global Release Coming Soon</title>
+  <meta name="description" content="Welcome to Virelia, an Urban Open World RPG. Join forces, explore the city, live the nightlife.">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-loading">
+
+  <div class="loading-screen">
+    <div class="loading-logo"></div>
+    <div class="loading-bar"><span></span></div>
+  </div>
+
+  <!-- NAV -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-left">
+      <a href="/" class="site-logo" aria-label="Virelia Home">
+        <img src="logo.png" alt="Virelia" />
+      </a>
+      <nav class="main-nav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#milestones" class="nav-link">Milestones</a>
+        <a href="#characters" class="nav-link">Characters</a>
+        <a href="#locations" class="nav-link">Locations</a>
+        <a href="#news" class="nav-link">News</a>
+      </nav>
+    </div>
+    <div class="topbar-right">
+      <div class="social-toggle" id="socialToggle">
+        <span class="icon-social"></span>
+        <div class="social-dropdown">
+          <a href="#" target="_blank" aria-label="X / Twitter" class="social-link s-twitter"></a>
+          <a href="#" target="_blank" aria-label="YouTube" class="social-link s-youtube"></a>
+          <a href="#" target="_blank" aria-label="Discord" class="social-link s-discord"></a>
+          <a href="#" target="_blank" aria-label="TikTok" class="social-link s-tiktok"></a>
+          <a href="#" target="_blank" aria-label="Instagram" class="social-link s-instagram"></a>
+        </div>
+      </div>
+      <button class="btn-register" id="openRegister">PRE-REGISTER</button>
+    </div>
+  </header>
+
+  <!-- HAMBURGER -->
+  <button class="hamburger" id="hamburger" aria-label="Open menu">
+    <span></span><span></span>
+  </button>
+
+  <!-- SIDE NAV -->
+  <div class="sidenav-overlay" id="sidenavOverlay"></div>
+  <nav class="sidenav" id="sidenav">
+    <div class="sidenav-links">
+      <a href="#home" class="sidenav-link">Home</a>
+      <a href="#milestones" class="sidenav-link">Milestones</a>
+      <a href="#characters" class="sidenav-link">Characters</a>
+      <a href="#locations" class="sidenav-link">Locations</a>
+      <a href="#news" class="sidenav-link">News</a>
+    </div>
+    <div class="sidenav-socials">
+      <a href="#" class="social-link s-twitter"></a>
+      <a href="#" class="social-link s-youtube"></a>
+      <a href="#" class="social-link s-discord"></a>
+      <a href="#" class="social-link s-tiktok"></a>
+      <a href="#" class="social-link s-instagram"></a>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img src="hero-bg.jpg" alt="" class="hero-img" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <button class="play-btn" id="playBtn" aria-label="Watch trailer">
+          <span class="play-icon"></span>
+        </button>
+        <div class="hero-copy">
+          <p class="hero-kicker">GLOBAL RELEASE</p>
+          <p class="hero-date">COMING SOON 2027</p>
+        </div>
+        <div class="platform-row">
+          <a href="#" class="platform-badge ps5" aria-label="PlayStation 5"></a>
+          <a href="#" class="platform-badge steam" aria-label="Steam"></a>
+          <a href="#" class="platform-badge appstore" aria-label="App Store"></a>
+          <a href="#" class="platform-badge googleplay" aria-label="Google Play"></a>
+          <button class="btn-register btn-register-hero" id="openRegisterHero">PRE-REGISTER</button>
+        </div>
+        <div class="scroll-hint">
+          <span></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CITY COMPARE -->
+    <section class="city-compare" id="city">
+      <div class="city-compare-inner">
+        <div class="city-side city-left">
+          <img src="city-left.jpg" alt="City View Left" />
+        </div>
+        <div class="city-divider" id="cityDivider">
+          <div class="city-divider-handle">
+            <svg viewBox="0 0 110 60" aria-hidden="true"><rect x="1.5" y="1.5" width="107" height="57" rx="28.5" stroke="currentColor" stroke-width="2" fill="none"/><path d="M87 30L67 18V42L87 30Z" fill="currentColor"/><path d="M23 30L43 18V42L23 30Z" fill="currentColor"/></svg>
+          </div>
+        </div>
+        <div class="city-side city-right">
+          <img src="city-right.jpg" alt="City View Right" />
+        </div>
+      </div>
+      <div class="city-copy">
+        <h2>Two Cities, Two Adventures</h2>
+        <p>Journey East and explore a world unlike any other</p>
+      </div>
+    </section>
+
+    <!-- CHARACTERS -->
+    <section class="characters" id="characters">
+      <div class="section-header">
+        <h2 class="section-title">Characters</h2>
+        <span class="section-sub">Characters</span>
+      </div>
+      <div class="character-list">
+
+        <article class="character-card" data-char="captain">
+          <div class="char-bg">
+            <img src="char-captain.jpg" alt="Captain" />
+          </div>
+          <div class="char-info">
+            <div class="char-name">
+              <span class="char-name-en">CAPTAIN</span>
+              <span class="char-name-sub">Captain</span>
+            </div>
+            <div class="char-quote">Traffic jam? Time to fly.</div>
+            <p class="char-desc">The perpetually beleaguered captain of the task force. Kicking back and having fun is the main objective. So what if the whole operation is crumbling and there are gangs breathing down your neck? Any decent plan can accommodate a few changes.</p>
+          </div>
+          <div class="char-gallery">
+            <img src="char-captain-1.jpg" alt="" loading="lazy" />
+            <img src="char-captain-2.jpg" alt="" loading="lazy" />
+            <img src="char-captain-3.jpg" alt="" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="character-card" data-char="shiye">
+          <div class="char-bg">
+            <img src="char-shiye.jpg" alt="Shi Ye" />
+          </div>
+          <div class="char-info">
+            <div class="char-name">
+              <span class="char-name-en">SHI YE</span>
+              <span class="char-name-sub">Shi Ye</span>
+            </div>
+            <div class="char-quote">I handle the cash, you handle the fighting.</div>
+            <p class="char-desc">With plenty of ideas and a plethora of tech at her disposal, she's who you hit up to get things done. This old friend may not make everything possible, but many things would be impossible without her.</p>
+          </div>
+          <div class="char-gallery">
+            <img src="char-shiye-1.jpg" alt="" loading="lazy" />
+            <img src="char-shiye-2.jpg" alt="" loading="lazy" />
+            <img src="char-shiye-3.jpg" alt="" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="character-card" data-char="taffy">
+          <div class="char-bg">
+            <img src="char-taffy.jpg" alt="Taffy" />
+          </div>
+          <div class="char-info">
+            <div class="char-name">
+              <span class="char-name-en">TAFFY</span>
+              <span class="char-name-sub">Taffy</span>
+            </div>
+            <div class="char-quote">Ugh, work stinks! Never shoulda taken this job.</div>
+            <p class="char-desc">She thought joining up would have her living on easy street. Instead she's out IN the streets, baking under the sun delivering bizarre cargo on her bike. Not exactly what she had in mind.</p>
+          </div>
+          <div class="char-gallery">
+            <img src="char-taffy-1.jpg" alt="" loading="lazy" />
+            <img src="char-taffy-2.jpg" alt="" loading="lazy" />
+            <img src="char-taffy-3.jpg" alt="" loading="lazy" />
+          </div>
+        </article>
+
+        <article class="character-card" data-char="richie">
+          <div class="char-bg">
+            <img src="char-richie.jpg" alt="Richie" />
+          </div>
+          <div class="char-info">
+            <div class="char-name">
+              <span class="char-name-en">RICHIE</span>
+              <span class="char-name-sub">Richie</span>
+            </div>
+            <div class="char-quote">It's a shot in the dark, but I gotta go with my gut.</div>
+            <p class="char-desc">Sometimes it's hard to tell if she's fiercely dedicated or simply not all there. Either way, having her on the team is a major boon. She fights crime by day and moonlights at night. Don't feel like playing nice? Good luck dodging her fists.</p>
+          </div>
+          <div class="char-gallery">
+            <img src="char-richie-1.jpg" alt="" loading="lazy" />
+            <img src="char-richie-2.jpg" alt="" loading="lazy" />
+            <img src="char-richie-3.jpg" alt="" loading="lazy" />
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- MILESTONES -->
+    <section class="milestones" id="milestones">
+      <header class="section-header">
+        <h2 class="section-title">Pre-Registration Milestones</h2>
+        <span class="section-sub">Pre-Registration Milestones</span>
+      </header>
+      <div class="milestone-track">
+        <div class="milestone-progress-bar">
+          <div class="milestone-fill" style="width: 40%"></div>
+        </div>
+        <div class="milestone-nodes">
+          <div class="milestone-node is-unlocked">
+            <div class="milestone-reward">
+              <img src="reward-1.png" alt="10K Gold" loading="lazy" />
+              <span>10K Gold</span>
+            </div>
+            <strong>15,000,000</strong>
+          </div>
+          <div class="milestone-node is-unlocked">
+            <div class="milestone-reward">
+              <img src="reward-2.png" alt="Clothing Dye" loading="lazy" />
+              <span>1 Clothing Dye</span>
+            </div>
+            <strong>20,000,000</strong>
+          </div>
+          <div class="milestone-node">
+            <div class="milestone-reward">
+              <img src="reward-3.png" alt="Profile Card" loading="lazy" />
+              <span>1 Profile Card</span>
+            </div>
+            <strong>25,000,000</strong>
+          </div>
+          <div class="milestone-node">
+            <div class="milestone-reward">
+              <img src="reward-4.png" alt="100 Vouchers" loading="lazy" />
+              <span>100 Vouchers</span>
+            </div>
+            <strong>30,000,000</strong>
+          </div>
+          <div class="milestone-node">
+            <div class="milestone-reward">
+              <img src="reward-5.png" alt="Character Outfit" loading="lazy" />
+              <span>Character Outfit</span>
+            </div>
+            <strong>35,000,000</strong>
+          </div>
+        </div>
+      </div>
+      <button class="btn-register btn-milestone" id="openRegisterMilestone">PRE-REGISTER</button>
+      <div class="milestone-date-block">
+        <strong>2027.01.15</strong>
+        <p>Global Release</p>
+      </div>
+    </section>
+
+    <!-- LOCATIONS -->
+    <section class="locations" id="locations">
+      <div class="section-header">
+        <h2 class="section-title">Locations</h2>
+        <span class="section-sub">Locations</span>
+      </div>
+      <div class="location-grid">
+        <article class="location-card">
+          <img src="loc-1.jpg" alt="Weilan Lake" loading="lazy" />
+          <div class="location-info">
+            <h3>Weilan Lake</h3>
+            <p>A lustrous pearl upon mysterious tides. Nestled between verdant hills, the painterly image of the pagoda reflected upon the lake attracts countless visitors.</p>
+            <button class="btn-explore">Explore</button>
+          </div>
+        </article>
+        <article class="location-card">
+          <img src="loc-2.jpg" alt="Mingpu District" loading="lazy" />
+          <div class="location-info">
+            <h3>Mingpu District</h3>
+            <p>The future waits for no one. Skyscrapers of glass and steel mix with low-lying brick houses, where the ancient and modern collide along the riverside.</p>
+            <button class="btn-explore">Explore</button>
+          </div>
+        </article>
+        <article class="location-card">
+          <img src="loc-3.jpg" alt="Downtown" loading="lazy" />
+          <div class="location-info">
+            <h3>Downtown</h3>
+            <p>Loved by locals. Nova City has a destination tailored to every visitor's desire. The brightest screen, the priciest store, the hottest band.</p>
+            <button class="btn-explore">Explore</button>
+          </div>
+        </article>
+        <article class="location-card">
+          <img src="loc-4.jpg" alt="Veluxity Zone" loading="lazy" />
+          <div class="location-info">
+            <h3>Veluxity Zone</h3>
+            <p>Fun central. From street racing to underground clubs, there's plenty of thrills to be had. After all, what's life without a bit of danger?</p>
+            <button class="btn-explore">Explore</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news" id="news">
+      <div class="news-inner">
+        <div class="news-left">
+          <div class="section-header">
+            <h2 class="section-title">NEWS</h2>
+            <span class="section-sub">NEWS</span>
+          </div>
+          <div class="news-featured">
+            <img src="news-featured.jpg" alt="Featured News" loading="lazy" />
+          </div>
+        </div>
+        <div class="news-right">
+          <ul class="news-list">
+            <li class="news-item">
+              <a href="#">
+                <span class="news-tag">ANNOUNCEMENT</span>
+                <span class="news-title">Global Launch Date Confirmed for January 2027</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#">
+                <span class="news-tag">GAMEPLAY VIDEO</span>
+                <span class="news-title">New Gameplay Footage Released</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#">
+                <span class="news-tag">GAMEPLAY TRAILER</span>
+                <span class="news-title">Official Gameplay Trailer</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#">
+                <span class="news-tag">CHARACTERS</span>
+                <span class="news-title">Meet the Full Cast of Virelia</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#">
+                <span class="news-tag">UPDATE</span>
+                <span class="news-title">Pre-Registration Milestone Rewards Revealed</span>
+              </a>
+            </li>
+            <li class="news-item">
+              <a href="#">
+                <span class="news-tag">EVENT</span>
+                <span class="news-title">Virelia at This Year's Gaming Expo</span>
+              </a>
+            </li>
+          </ul>
+          <a href="#" class="more-link">More <span class="arrow-right"></span></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <img src="logo.png" alt="Virelia" class="footer-logo" />
+        <div class="footer-platforms">
+          <span class="plat-icon plat-ps5"></span>
+          <span class="plat-icon plat-pc"></span>
+          <span class="plat-icon plat-apple"></span>
+          <span class="plat-icon plat-android"></span>
+        </div>
+      </div>
+      <div class="footer-right">
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+          <a href="#">Partner With Us</a>
+        </div>
+        <p class="footer-copy">&copy; 2027 Virelia Studio. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- VIDEO MODAL -->
+  <div class="video-modal" id="videoModal">
+    <div class="video-modal-backdrop" id="videoModalClose"></div>
+    <div class="video-modal-inner">
+      <button class="video-modal-close" id="videoModalCloseBtn" aria-label="Close video">&times;</button>
+      <video src="trailer.mp4" controls poster="trailer-poster.jpg"></video>
+    </div>
+  </div>
+
+  <!-- PRE-REGISTER MODAL -->
+  <div class="register-modal" id="registerModal">
+    <div class="register-backdrop" id="registerClose"></div>
+    <div class="register-inner">
+      <button class="register-close" id="registerCloseBtn" aria-label="Close">&times;</button>
+      <h2>PRE-REGISTER</h2>
+      <div class="platform-tabs">
+        <button class="ptab active" data-tab="pc">PC</button>
+        <button class="ptab" data-tab="console">Console</button>
+        <button class="ptab" data-tab="mobile">Mobile</button>
+      </div>
+      <p class="register-sub">Subscribe for the latest Virelia updates.</p>
+      <input type="email" class="register-email" placeholder="Enter Your Email" />
+      <label class="register-check">
+        <input type="checkbox" id="tosCheck" />
+        I consent to the <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>
+      </label>
+      <button class="btn-register-submit" id="registerSubmit">PRE-REGISTER</button>
+      <p class="register-success" id="registerSuccess">You're registered! See you in 2027.</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
